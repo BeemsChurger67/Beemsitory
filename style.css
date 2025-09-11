@@ -1,4 +1,46 @@
-#container {
+body {
+    background-image: url('assets/galaxyBg.jpeg');
+    background-attachment: fixed; /* Add this line */
+    margin: 0;
+    padding: 0;
+}
+#container {    
     text-align: center;
     font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.5); /* 0.5 = 50% opacity */
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#containerAssets {
+    opacity: 100%;
+}
+.thumbnail {
+    border-radius: 20px;
+    width: 275px;
+    height: 275px;
+}
+#games-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* space between games */
+}
+.game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game-label {
+    margin-top: 10px;
+    text-align: center;
+}
+a {
+    transition: transform 0.2s ease;
+}
+a:hover {
+    transform: scale(1.15);
 }
