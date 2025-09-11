@@ -9,12 +9,11 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgba(255, 255, 255, 0.5); /* 0.5 = 50% opacity */
     padding: 20px 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 555px;
     margin: 50px auto;
-    border: 2px solid white;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(179, 179, 179, 0.5);
 }
 #containerAssets {
     opacity: 100%;
@@ -24,23 +23,9 @@ body {
     width: 275px;
     height: 275px;
 }
-#games-list {
-    display: flex;
-    justify-content: center;
-    gap: 40px; /* space between games */
-}
-.game-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.game-label {
-    margin-top: 10px;
-    text-align: center;
-}
-a {
+img {
     transition: transform 0.2s ease;
 }
-a:hover {
+img:hover {
     transform: scale(1.15);
 }
