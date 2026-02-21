@@ -1,31 +1,110 @@
 body {
     background-image: url('assets/galaxyBg.jpeg');
-    background-attachment: fixed; /* Add this line */
     margin: 0;
     padding: 0;
+    font-size: 1.5vh;
+    color: white;
+    font-family: cursive;
 }
-#container {    
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: rgba(255, 255, 255, 0.5); /* 0.5 = 50% opacity */
-    padding: 20px 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 555px;
-    margin: 50px auto;
-    background-color: rgba(179, 179, 179, 0.5);
+a {
+  text-decoration: none;   /* removes underline */
 }
-#containerAssets {
-    opacity: 100%;
+#container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 5vh 5vh;
+    border-radius: 2vh;
+    width: 75vw;
+    height: 75vh;
+    backdrop-filter: blur(10px) brightness(80%);
+    transform: translate(-50%,-50%);
 }
 .thumbnail {
-    border-radius: 20px;
-    width: 275px;
-    height: 275px;
+    border-radius: 2vh;
+    width: 35vh;
+    height: 35vh;
+    transition: ease 0.1s;
 }
-img {
-    transition: transform 0.2s ease;
+.thumbnail:hover {
+    scale: 1.05;
 }
-img:hover {
-    transform: scale(1.15);
+#portfolioImg {
+    position: fixed;
+    right: 7vh;
+    bottom: 3vh;
+    filter: drop-shadow(0 0 2vh black);
+    border-radius: 1vh;
+    width: 65vh;
+}
+#textContainer {
+    position: fixed;
+    text-align: center;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.4);
+    padding: 3vh 3vh;
+    border-radius: 2vh;
+    width: 60vh;
+}
+#pageButtons {
+    text-align: center;
+    width: 106.5%;
+    margin: 0 -5vh;
+    padding: 1vh 0vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#pageButtons button {
+    font-size: 3vh;
+    border: none;
+    background-image: url(assets/gradient.jpg);
+    background-size: cover;
+    color: white;
+    border-radius: 1vh;
+    font-family: cursive;
+    transition: ease 0.1s;
+}
+#pageButtons button:hover {
+    filter: brightness(150%);
+    scale: 1.05;
+}
+#pageButtons button:active {
+    scale: 0.95;
+}
+#socialButtons {
+    position: fixed;
+    bottom: 2vh;
+    left: 2vh;
+}
+#gamesList {
+    margin: auto;
+    overflow-y: scroll;
+    width: 105vh;
+    height: 60vh;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 3vh;
+    scrollbar-color: purple black;
+}
+#page1 {
+    opacity: 1;
+}
+#page2 {
+    opacity: 0;
+    display: none;
+    text-align: center;
+}
+#page3 {
+    padding: 2vh 2vh;
+    opacity: 0;
+    display: none;
+    overflow-y: scroll;
+    margin-top: 1vh;
+    scrollbar-color: purple black;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 3vh;
+}
+.social {
+    width: 7.5vh;
 }

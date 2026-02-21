@@ -8,28 +8,56 @@
 </head>
 <body>
     <div id="container">
-        <div id="containerAssets">
-            <h1>List of all of my games ive made</h1>
-            <h2>scratch/html</h2>
-            <br>
-            <a href="https://beemschurger67.github.io/Beemsrooms/">
-                <img src="assets/beemsrooms.png" class="thumbnail">
-            </a>
-            <a href="https://beemschurger67.github.io/Talking-Retro/">
-                <img src="assets/talkingRetro.png" class="thumbnail">
-            </a>
-            <a href="https://scratch.mit.edu/projects/1118928827/">
-                <img src="assets/FNaB1.png" class="thumbnail">
-            </a>
-            <a href="https://beemschurger67.github.io/Five-Nights-at-Beems-2/">
-                <img src="assets/FNaB2.png" class="thumbnail">
-            </a>
+        <div id="pageButtons">
+            <button id="pageButton1" onclick="changePage(1)">Main page</button>
+            <button id="pageButton2" onclick="changePage(2)">Games</button>
+            <button id="pageButton3" onclick="changePage(3)">Extras</button>
         </div>
-        <br><br><br>
-        <h1>hello im beems</h1>
-        <h3>im a finnish gd player and i grind gd 24/7. yeah thats basically it ig</h3>
-        <br><br><br><br><br><br>
-        <h1>made by beemychurger67</h1>
+        <div id="page1">
+            <div id="socialButtons">
+                <a href="https://discord.com/users/690512932647338004" target="_blank">
+                    <img src="assets/socials/discord.png" class="social">
+                </a>
+                <a href="https://www.youtube.com/@beemschurger67">
+                    <img src="assets/socials/youtube.png" class="social">
+                </a>
+                <a href="https://www.roblox.com/users/156627422/profile">
+                    <img src="assets/socials/roblox.png" class="social">
+                </a>
+                <a href="https://steamcommunity.com/profiles/76561198347805074/">
+                    <img src="assets/socials/steam.png" class="social">
+                </a>
+                <a href="https://allmodeslist.pages.dev/player?id=13623362-6278-419c-8340-319c48ed7a03">
+                    <img src="assets/socials/allmodeslist.png" class="social">
+                </a>
+                <a href="https://pointercrate.com/demonlist/statsviewer/?player=63180">
+                    <img src="assets/socials/pointercrate.png" class="social">
+                </a>
+            </div>
+            <div id="textContainer">
+                <div style="font-size: 7vh;">Hello! I'm Beems!</div>
+                <br>
+                <div style="font-size: 4vh;">About me:</div>
+                <div style="font-size: 2vh;">I am a 16 year old finnish programmer. I am a website designer, game maker and i am learning c# to make my games run faster. I have a couple of website games that i have made. You can play them on the top bar of this website.</div>
+                <div style="font-size: 2vh;">I also do website commissions for free but don't expect the best quality.</div>
+            </div>
+            <img id="portfolioImg" src="assets/beems.png">
+        </div>
+        <div id="page2">
+            <div style="font-size: 7vh;">List of games i have made.</div>
+            <div id="gamesList"></div>
+        </div>
+        <div id="page3">
+            <div style="font-size: 7vh; text-align: center;">My Hardest Accomplishments:</div>
+            <div style="text-align: left;">
+                <div style="font-size: 7vh;">My hardest in GD</div>
+                <iframe style="width: 56vh; height: 31vh;" src="https://www.youtube.com/embed/Foh0yv0Y5Lo?si=Wd_CtRjfcayxVyGN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div style="text-align: right;">
+                <div style="font-size: 7vh;">My hardest Max mode</div>
+                <iframe style="width: 56vh; height: 31vh;" src="https://www.youtube.com/embed/2gNcIItkWyE?si=H15-8HNW0xNvDPRX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
