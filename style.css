@@ -5,6 +5,7 @@ body {
     font-size: 1.5vh;
     color: white;
     font-family: cursive;
+    user-select: none;
 }
 a {
   text-decoration: none;   /* removes underline */
@@ -25,6 +26,8 @@ a {
     width: 35vh;
     height: 35vh;
     transition: ease 0.1s;
+    margin-top: 1vh;
+    margin-left: 1.2vh;
 }
 .thumbnail:hover {
     scale: 1.05;
@@ -55,7 +58,7 @@ a {
     padding: 1vh 0vh;
     background-color: rgba(0, 0, 0, 0.4);
 }
-#pageButtons button {
+button {
     font-size: 3vh;
     border: none;
     background-image: url(assets/gradient.jpg);
@@ -65,11 +68,12 @@ a {
     font-family: cursive;
     transition: ease 0.1s;
 }
-#pageButtons button:hover {
+button:hover {
     filter: brightness(150%);
     scale: 1.05;
+    cursor: pointer;
 }
-#pageButtons button:active {
+button:active {
     scale: 0.95;
 }
 #socialButtons {
@@ -105,6 +109,42 @@ a {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 3vh;
 }
+#page4 {
+    opacity: 0;
+    display: none;
+}
 .social {
     width: 7.5vh;
+}
+#moneyAmount {
+    font-size: 3vh;
+}
+#multiplierAmount {
+    font-size: 2vh;
+}
+#lock1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 20vh;
+}
+#lock1:hover {
+    cursor: pointer;
+}
+#progressSaved {
+    font-size: 7vh;
+    padding-left: 2vh;
+    opacity: 0;
+}
+#progressSaved.fade {
+    animation: fade-out 1.5s forwards;
+}
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }

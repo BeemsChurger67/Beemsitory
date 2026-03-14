@@ -9,9 +9,10 @@
 <body>
     <div id="container">
         <div id="pageButtons">
-            <button id="pageButton1" onclick="changePage(1)">Main page</button>
-            <button id="pageButton2" onclick="changePage(2)">Games</button>
-            <button id="pageButton3" onclick="changePage(3)">Extras</button>
+            <button id="pageButton1" data-page="1">Main page</button>
+            <button id="pageButton2" data-page="2">Games</button>
+            <button id="pageButton3" data-page="3">Extras</button>
+            <button id="pageButton4" data-page="4">???</button>
         </div>
         <div id="page1">
             <div id="socialButtons">
@@ -33,12 +34,15 @@
                 <a href="https://pointercrate.com/demonlist/statsviewer/?player=63180">
                     <img src="assets/socials/pointercrate.png" class="social">
                 </a>
+                <a href="https://www.tiktok.com/@beemschurger67">
+                    <img src="assets/socials/tiktok.png" class="social">
+                </a>
             </div>
             <div id="textContainer">
                 <div style="font-size: 7vh;">Hello! I'm Beems!</div>
                 <br>
                 <div style="font-size: 4vh;">About me:</div>
-                <div style="font-size: 2vh;">I am a 16 year old finnish programmer. I am a website designer, game maker and i am learning c# to make my games run faster. I have a couple of website games that i have made. You can play them on the top bar of this website.</div>
+                <div style="font-size: 2vh;">I am a 16 year old finnish programmer. I am a website designer, game maker and i'm pretty good at most games. I am learning c# at the moment because c# is useful to know. I have a couple of website games that i have made. You can play them on the top bar of this website.</div>
                 <div style="font-size: 2vh;">I also do website commissions for free but don't expect the best quality.</div>
             </div>
             <img id="portfolioImg" src="assets/beems.png">
@@ -48,15 +52,37 @@
             <div id="gamesList"></div>
         </div>
         <div id="page3">
-            <div style="font-size: 7vh; text-align: center;">My Hardest Accomplishments:</div>
+            <div style="font-size: 7vh; text-align: center; padding: 4vh 4vh;">My Hardest Accomplishments:</div>
             <div style="text-align: left;">
                 <div style="font-size: 7vh;">My hardest in GD</div>
-                <iframe style="width: 56vh; height: 31vh;" src="https://www.youtube.com/embed/Foh0yv0Y5Lo?si=Wd_CtRjfcayxVyGN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe style="border-radius: 3vh; width: 56vh; height: 31vh;" src="https://www.youtube.com/embed/Foh0yv0Y5Lo?si=Wd_CtRjfcayxVyGN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img src="assets/pointercrateBeems.png" style="height: 31vh; border-radius: 3vh;">
             </div>
             <div style="text-align: right;">
                 <div style="font-size: 7vh;">My hardest Max mode</div>
-                <iframe style="width: 56vh; height: 31vh;" src="https://www.youtube.com/embed/2gNcIItkWyE?si=H15-8HNW0xNvDPRX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img src="assets/amlBeems.png" style="height: 31vh; border-radius: 3vh;">
+                <iframe style="border-radius: 3vh; width: 56vh; height: 31vh;" width="560" height="315" src="https://www.youtube.com/embed/Zk2BV6UcsYE?si=FoSTlJI8QrXZzbdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+            <div style="font-size: 7vh; text-align: center; padding: 4vh 4vh;">Minigames/Challenges</div>
+            <div style="display: flex; margin: 1vh;">
+                <button id="saveProgressButton" style="font-size: 7vh; text-align: center;">Save progress</button>
+                <div id="progressSaved">Progress Saved</div>
+            </div>
+            <div id="beemsclickerDiv" style="text-align: left; background-color: rgba(0, 0, 0, 0.4); width:60vh; border-radius: 3vh; padding: 1vh 1vh;">
+                <div id="beemsclickerText" style="font-size: 7vh; text-align: left;">Beemsclicker</div>
+                <div id="moneyAmount">$0.00</div>
+                <div id="multiplierAmount">Multiplier: x1.00</div>
+                <button id="addMoney">Get money</button><br><br>
+                <button id="basicMultiplier">Basic multiplier | Costs: $10.00</button><br><br>
+                <button id="goodMultiplier">Good multiplier | Costs: $50.00</button><br><br>
+                <button id="greatMultiplier">Great multiplier | Costs: $150.00</button><br><br>
+                <button id="amazingMultiplier">Amazing multiplier | Costs: $500.00</button><br><br>
+                <button id="beemsclickerWin">Beat the game | Costs: $1000000.00</button><br><br>
+            </div>
+            <button id="resetData" style="font-size: 1vh;">Reset Data</button>
+        </div>
+        <div id="page4">
+            <img id="lock1" src="assets/padlock.png">
         </div>
     </div>
     <script src="script.js"></script>
